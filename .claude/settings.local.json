@@ -1,0 +1,34 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install)",
+      "Bash(npm run build:widget:*)",
+      "Bash(npm run db:generate:*)",
+      "Bash(where:*)",
+      "Bash(psql:*)",
+      "Bash(dir:*)",
+      "Bash(curl:*)",
+      "Bash(\"C:\\\\Users\\\\Bas\\\\Desktop\\\\Widget Wise\\\\postgresql-17.2-1-windows-x64.exe\" --mode unattended --superpassword postgres --serverport 5432 --servicename postgresql-17)",
+      "Bash(cmd /c \"\"\"C:\\\\Users\\\\Bas\\\\Desktop\\\\Widget Wise\\\\postgresql-17.2-1-windows-x64.exe\"\" --mode unattended --superpassword postgres --serverport 5432 --servicename postgresql-17\")",
+      "Bash(\"C:\\\\Program Files\\\\PostgreSQL\\\\17\\\\bin\\\\psql.exe\" -U postgres -c \"CREATE DATABASE widgetwise;\")",
+      "Bash(set:*)",
+      "Bash(cmd /c \"set PGPASSWORD=postgres&& \"C:Program FilesPostgreSQL17bincreatedb.exe\" -U postgres widgetwise\")",
+      "Bash(cmd /c \"set PGPASSWORD=postgres&& \"C:Program FilesPostgreSQL17binpsql.exe\" -U postgres -l\")",
+      "Bash(PGPASSWORD=postgres \"C:\\\\Program Files\\\\PostgreSQL\\\\17\\\\bin\\\\psql.exe\":*)",
+      "Bash(npx prisma migrate dev:*)",
+      "Bash(npx prisma generate:*)",
+      "Bash(tasklist:*)",
+      "Bash(taskkill:*)",
+      "Bash(cmd //c \"taskkill /F /PID 10484\")",
+      "Bash(cmd //c \"taskkill /F /IM node.exe\")",
+      "Bash(npm install:*)",
+      "Bash(node widget/build.js:*)",
+      "Bash(node build.js:*)",
+      "Bash(npm uninstall:*)",
+      "Bash(npx prisma migrate resolve:*)",
+      "Bash(cmd //c \"npx prisma migrate dev --name add_user_plan\")",
+      "Bash(npx prisma migrate deploy:*)",
+      "Bash(npx prisma:*)"
+    ]
+  }
+}
