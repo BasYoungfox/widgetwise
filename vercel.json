@@ -1,12 +1,15 @@
 {
   "version": 2,
   "buildCommand": "npm run build",
+  "outputDirectory": "client/dist",
   "functions": {
     "api/index.js": {
-      "includeFiles": "{server,widget,client}/**"
+      "includeFiles": "{server,widget}/**"
     }
   },
   "rewrites": [
-    { "source": "/(.*)", "destination": "/api/index.js" }
+    { "source": "/api/(.*)", "destination": "/api/index.js" },
+    { "source": "/widget/(.*)", "destination": "/api/index.js" },
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
