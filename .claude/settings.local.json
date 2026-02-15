@@ -28,7 +28,10 @@
       "Bash(npx prisma migrate resolve:*)",
       "Bash(cmd //c \"npx prisma migrate dev --name add_user_plan\")",
       "Bash(npx prisma migrate deploy:*)",
-      "Bash(npx prisma:*)"
+      "Bash(npx prisma:*)",
+      "Bash(git push:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ]
   }
 }

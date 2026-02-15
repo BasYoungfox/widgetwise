@@ -1,10 +1,9 @@
 const express = require('express');
-const { PrismaClient } = require('@prisma/client');
+const prisma = require('../lib/prisma');
 const rateLimit = require('express-rate-limit');
 const { getChatResponse } = require('../services/openai');
 
 const router = express.Router();
-const prisma = new PrismaClient();
 
 // Rate limit: 20 messages per minute per session
 const chatLimiter = rateLimit({

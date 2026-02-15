@@ -1,7 +1,5 @@
-const { PrismaClient } = require('@prisma/client');
+const prisma = require('../lib/prisma');
 const authMiddleware = require('./auth');
-
-const prisma = new PrismaClient();
 
 function adminMiddleware(req, res, next) {
   authMiddleware(req, res, async () => {
